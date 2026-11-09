@@ -1,124 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gallery - SHLOK JAISWAL</title>
-
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='style.css') }}">
-</head>
-
-<body>
-
-    <nav class="navbar">
-        <a href="{{ url_for('home') }}">Home</a>
-        <a href="{{ url_for('home') }}#about">About</a>
-        <a href="{{ url_for('home') }}#profile">Profile</a>
-        <a href="{{ url_for('gallery') }}">Gallery</a>
-        <a href="{{ url_for('home') }}#services">Services</a>
-        <a href="{{ url_for('home') }}#contact">Contact</a>
-    </nav>
-
-    <section id="gallery">
-        <h1>MY GALLERY</h1>
-
-        <div class="photos">
-            <img src="{{ url_for('static', filename='event.jpg') }}"
-                 alt="Event Photo" width="200" height="200">
-
-            <img src="{{ url_for('static', filename='profile.jpg') }}"
-                 alt="Profile Photo" width="200" height="200">
-
-            <img src="{{ url_for('static', filename='profile2.jpg') }}"
-                 alt="Profile 2" width="200" height="200">
-        </div>
-    </section>
-
-</body>
-</html>
-
-<!DOCTYPE html>
 <html>
 <head>
-<title>My Photo Gallery</title>
-<style>
-body {
-margin:0;
-font-family:Arial;
-background:#f0f4f8;
-}
-nav {
-background:#172554;
-padding:25px;
-text-align:center;
-}
-nav a {
-color:white;
-text-decoration:none;
-font-size:25px;
-font-weight:bold;
-margin:12px;
-}
-h1 {
-text-align:center;
-font-size:40px;
-color:#172554;
-}
-.gallery {
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-padding:30px;
-}
-.gallery img {
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:12px;
-}
-@media(max-width:700px) {
-.gallery { grid-template-columns:repeat(2,1fr); }
-}
-</style>
+    <title>Gallery - Shlok Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f1f5f9;
+        }
+
+        nav {
+            background: #172554;
+            padding: 24px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #999;
+        }
+
+        @media(max-width:600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
+<nav>
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/gallery">Gallery</a>
+    <a href="/contact">Contact</a>
+</nav>
 
-
-<h1>MY PHOTO GALLERY</h1>
-
-<div class="gallery">
-<img src="/static/photo1.jpg">
-<img src="/static/photo2.jpg">
-<img src="/static/photo3.jpg">
-<img src="/static/photo4.jpg">
-<img src="/static/photo5.jpg">
-<img src="/static/photo6.jpg">
-</div>
-
-</body>
-</html>
 <h1>Our Photo Gallery</h1>
 
 <div class="gallery">
-    <img src="{{ url_for('static', filename='images/photo1.jpg') }}">
-    <img src="{{ url_for('static', filename='images/photo2.jpg') }}">
-    <img src="{{ url_for('static', filename='images/photo3.jpg') }}">
-    <img src="{{ url_for('static', filename='images/photo4.jpg') }}">
+
+    <img src="{{ url_for('static', filename='event.jpg') }}">
+    <img src="{{ url_for('static', filename='photo1.jpg') }}">
+    <img src="{{ url_for('static', filename='profile.jpg') }}">
+    <img src="{{ url_for('static', filename='profile2.jpg') }}">
+
 </div>
 
-<style>
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-.gallery img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-</style>
+</body>
+</html>
