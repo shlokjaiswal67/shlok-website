@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shlok Jaiswal Official</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef4ff;
+            text-align: center;
+        }
+
+        header {
+            background: #071b3b;
+            color: white;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .main {
+            padding: 60px 15px;
+        }
+
+        .main h2 {
+            color: #1769d2;
+            font-size: 32px;
+        }
+
+        .main p {
+            font-size: 18px;
+        }
+
+        .contact {
+            display: inline-block;
+            background: #1769d2;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #071b3b;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SHLOK JAISWAL</h1>
+    <p>OFFICIAL PERSONAL WEBSITE</p>
+</header>
+
+<div class="main">
+
+    <h2>WELCOME TO MY WEBSITE</h2>
+
+    <h1>SHLOK JAISWAL</h1>
+
+    <p>
+        नमस्ते! मेरी आधिकारिक वेबसाइट पर
+        आपका स्वागत है।
+    </p>
+
+    <a class="contact"
+       href="tel:9026542364">
+       CONTACT: 9026542364
+    </a>
+
+</div>
+
+<footer>
+    © 2026 SHLOK JAISWAL
+</footer>
+
+</body>
+</html>

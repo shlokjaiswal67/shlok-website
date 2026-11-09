@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shlok Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+        }
+
+        nav {
+            background: #172554;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 18px;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background: #2563eb;
+            border-radius: 8px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 45px;
+            color: #172554;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="{{ url_for('home') }}">HOME</a>
+        <a href="{{ url_for('profile') }}">PROFILE</a>
+        <a href="{{ url_for('gallery') }}">GALLERY</a>
+        <a href="{{ url_for('services') }}">SERVICES</a>
+        <a href="{{ url_for('contact') }}">CONTACT</a>
+    </nav>
+
+    <div class="content">
+        <h1>WELCOME TO SHLOK WEBSITE</h1>
+        <p>Welcome to my personal website.</p>
+    </div>
+
+</body>
+</html>
