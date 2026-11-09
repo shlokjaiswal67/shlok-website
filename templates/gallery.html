@@ -99,3 +99,26 @@ border-radius:12px;
 
 </body>
 </html>
+<h1>Our Photo Gallery</h1>
+
+<div class="gallery">
+    <img src="{{ url_for('static', filename='images/photo1.jpg') }}">
+    <img src="{{ url_for('static', filename='images/photo2.jpg') }}">
+    <img src="{{ url_for('static', filename='images/photo3.jpg') }}">
+    <img src="{{ url_for('static', filename='images/photo4.jpg') }}">
+</div>
+
+<style>
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+</style>
